@@ -1,0 +1,17 @@
+assembly-versioning-scheme: MajorMinorPatch
+assembly-informational-format: '{FullSemVer}.sha.{Sha}'
+branches:
+  master:
+    tag: ""
+  dev(elop)?(ment)?$:
+    tag: "dev"
+  features?[/-]:
+    tag: "f-{BranchName}"
+  hotfix[/-]:
+    tag: "h-{BranchName}"
+  support[/-]:
+    tag: "support"
+  release[/-]:
+    tag: "beta"
+ignore:
+  sha: []

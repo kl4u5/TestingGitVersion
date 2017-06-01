@@ -11,7 +11,7 @@ namespace TestingGitVersion
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello. Here ar some danish characters: æøå ÆØÅ");
+            Console.WriteLine("Hello. Here ar some danish characters: æøå HEJ");
 
             System.Reflection.Assembly assembly = System.Reflection.Assembly.GetExecutingAssembly();
             FileVersionInfo fvi = FileVersionInfo.GetVersionInfo(assembly.Location);

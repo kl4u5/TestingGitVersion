@@ -3,15 +3,27 @@ assembly-informational-format: '{FullSemVer}.sha.{Sha}'
 branches:
   master:
     tag: ""
+    mode: ContinuousDeployment
+    increment: Patch
   dev(elop)?(ment)?$:
     tag: "dev"
+    mode: ContinuousDeployment
+    increment: Patch
   features?[/-]:
     tag: "f-{BranchName}"
+    mode: ContinuousDeployment
+    increment: Patch
   hotfix[/-]:
     tag: "h-{BranchName}"
+    mode: ContinuousDeployment
+    increment: Patch
   support[/-]:
     tag: "support"
+    mode: ContinuousDeployment
+    increment: Patch
   release[/-]:
     tag: "beta"
+    mode: ContinuousDeployment
+    increment: Patch
 ignore:
   sha: []

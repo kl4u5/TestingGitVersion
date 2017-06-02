@@ -10,10 +10,11 @@ namespace TestingGitVersion
     class Program
     {
         static void Main(string[] args)
-        {
+        {            
             Console.WriteLine("Hello. Here ar some danish characters: æøå HEJ");
             Console.WriteLine("Hotfix 1 done.");
             Console.WriteLine("Commit to master done. one more");    
+            Console.WriteLine("Added feature 1");
             System.Reflection.Assembly assembly = System.Reflection.Assembly.GetExecutingAssembly();
             FileVersionInfo fvi = FileVersionInfo.GetVersionInfo(assembly.Location);
           

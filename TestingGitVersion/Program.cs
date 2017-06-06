@@ -15,6 +15,7 @@ namespace TestingGitVersion
             Console.WriteLine("Hotfix 1 done.");
             Console.WriteLine("Commit to master done. one more");    
             Console.WriteLine("Added feature 1");
+            Console.WriteLine("Added hubflow hotfix1");
             System.Reflection.Assembly assembly = System.Reflection.Assembly.GetExecutingAssembly();
             FileVersionInfo fvi = FileVersionInfo.GetVersionInfo(assembly.Location);
           
